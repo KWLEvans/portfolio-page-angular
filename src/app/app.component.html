@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div (click)="wipe()" id="main-content">
+</div>
+<div *ngIf="about || contact" id="sidebar-content">
+  <app-about *ngIf='about'></app-about>
+</div>
+<div id="nav-tabs">
+  <div id="nav-spacer"></div>
+  <div (click)="toggleAbout()" id="about-tab" class="nav-tab">
+    About
+  </div>
+  <div (click)="toggleContact()" id="contact-tab" class="nav-tab">
+    Contact
+  </div>
+</div>

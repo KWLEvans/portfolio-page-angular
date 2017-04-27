@@ -1,0 +1,47 @@
+.container {
+  height: 100%;
+}
+
+.nav-tab {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  transform: rotate(-90deg);
+  margin-right: -16px;
+  padding: 15px;
+  padding-bottom: 8px;
+  border-radius: 40px 40px 0px 0px;
+  font-weight: bold;
+}
+
+#about-tab {
+  margin-top: 20px;
+}
+
+#contact-tab {
+  margin-top: 40px;
+  margin-right: -22px;
+}
+
+#main-content {
+
+}
+
+#nav-spacer {
+  float: right;
+  width: 20px;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+#nav-tabs {
+  height: 100vh;
+  float: right;
+  width: 100px;
+}
+
+#sidebar-content {
+  float: right;
+  width: 25%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8);
+}

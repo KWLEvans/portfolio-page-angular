@@ -1,0 +1,18 @@
+div#about {
+  padding: 1px 10px 5px 10px;
+  height: 100%;
+}
+
+div#image-container {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+img {
+  height: 200px;
+  border-radius: 50%;
+}
