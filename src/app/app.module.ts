@@ -7,6 +7,7 @@ import { AngularFireModule } from 'angularfire2';
 import { masterFirebaseConfig } from './api-keys';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
+import { ProjectTileComponent } from './project-tile/project-tile.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -18,7 +19,8 @@ export const firebaseConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent
+    AboutComponent,
+    ProjectTileComponent
   ],
   imports: [
     BrowserModule,

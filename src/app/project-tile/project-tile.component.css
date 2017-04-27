@@ -1,0 +1,56 @@
+img {
+  width: 298px;
+}
+
+.project {
+  perspective: 1000px;
+	margin: auto;
+	margin-top: 40px;
+}
+
+.project.hover .flipper {
+	transform: rotateY(180deg);
+	transform-origin: center center;
+}
+
+.project, .project-front, .project-back {
+  width: 298px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-front, .project-back {
+  backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.project-front {
+	z-index: 2;
+	transform: rotateY(0deg);
+}
+
+.project-back {
+	transform: rotateY(180deg);
+  background-color: white;
+}
+
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.project-title {
+  width: 298px;
+  text-align: center;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.project-title h3 {
+  margin: 0px;
+}

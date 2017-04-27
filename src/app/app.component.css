@@ -11,6 +11,7 @@
   padding-bottom: 8px;
   border-radius: 40px 40px 0px 0px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 #about-tab {
@@ -22,8 +23,13 @@
   margin-right: -22px;
 }
 
-#main-content {
+#resume-tab {
+  margin-top: 47px;
+  margin-right: -23px;
+}
 
+#main-content {
+  float: left;
 }
 
 #nav-spacer {
@@ -39,9 +45,16 @@
   width: 100px;
 }
 
+#resume-img {
+  height: 90vh;
+  margin-top: 5vh;
+  width: auto;
+}
+
 #sidebar-content {
   float: right;
   width: 25%;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
 }

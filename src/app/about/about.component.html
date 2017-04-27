@@ -1,26 +1,18 @@
 <div id="about">
-  <h2>About</h2>
+  <h2><span *ngIf="about">About</span><span *ngIf="contact">Contact</span></h2>
   <div id="image-container">
     <img src='./../assets/me.jpg' alt='an image of Keith Evans'>
   </div>
-  <p>
-    I've spent most of my adult life saying that my dream job is doing puzzles for money. I'm currently studying at Epicodus to leverage my passion for puzzling and my love of languages to do exactly that by becoming a web developer.
-  </p>
+  <hr>
+  <div *ngIf="about">
+    <p>
+      I've spent most of my adult life saying that my dream job is doing puzzles for money. I'm currently studying at Epicodus to leverage my passion for puzzling and my love of languages to do exactly that by becoming a web developer.
+    </p>
 
-  <p>
-    Approaching development from the linguistic side, I also bring a host of soft skills from my years in teaching and counseling positions: effective communication, collaboration and conflict mediation, among others. My goal is to bring my positive nature, my zeal for learning, and my deep belief in the boundless potential of all people to the Portland Tech scene.
-  </p>
-
-  <h4>Educational Background:</h4>
-  <ol>
-    <li><strong>Epicodus</strong><em>2017</em>PHP/Drupal Web Development</li>
-    <li><strong>Newcastle University</strong><em>2013-2014</em>MA Professional Translation for European Languages</li>
-    <li><strong>University of Oregon</strong><em>2008-2012</em>BA French and Italian Language and Literature (summa cum laude)</li>
-  </ol>
-  <h4>Work Experience</h4>
-  <ol>
-    <li><strong>Inside Track</strong><em>2015-2016</em>Success Coach</li>
-    <li><strong>Scuola Italiana di Portland</strong><em>2014-2016</em>Italian Instructor</li>
-    <li><strong>University of Oregon</strong><em>2012-2013</em>Graduate Teaching Fellow - Italian</li>
-  </ol>
+    <p>
+      Approaching development from the linguistic side, I also bring a host of soft skills from my years in teaching and counseling positions: effective communication, collaboration and conflict mediation, among others. My goal is to bring my positive nature, my zeal for learning, and my deep belief in the boundless potential of all people to the Portland Tech scene.
+    </p>
+  </div>
+  <div *ngIf="contact">
+  </div>
 </div>

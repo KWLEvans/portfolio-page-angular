@@ -1,7 +1,9 @@
 <div (click)="wipe()" id="main-content">
+  <app-project-tile></app-project-tile>
 </div>
-<div *ngIf="about || contact" id="sidebar-content">
-  <app-about *ngIf='about'></app-about>
+<div *ngIf="about || contact || resume" [ngStyle]="{'width': getWidth()}" id="sidebar-content">
+  <app-about *ngIf='about || contact' [about]="about" [contact]="contact"></app-about>
+  <img *ngIf="resume" id="resume-img" src="./assets/resume.png" alt="an image of a very good resume">
 </div>
 <div id="nav-tabs">
   <div id="nav-spacer"></div>
@@ -10,5 +12,8 @@
   </div>
   <div (click)="toggleContact()" id="contact-tab" class="nav-tab">
     Contact
+  </div>
+  <div (click)="toggleResume()" id="resume-tab" class="nav-tab">
+    Resume
   </div>
 </div>
